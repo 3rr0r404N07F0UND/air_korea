@@ -1,1 +1,10 @@
 flask>=2.3.2
+Flask.Script>=2.0.6
+Flask.Migrate>=4.0.4
+Flask.SQLAlchemy>=3.0.5
+Flask.WTF>=1.1.1
+Flask-Login>=0.6.2
+mysqlclient>=2.2.0
+redis>=4.6.0
+unittest2>=1.1.0
+requests>=2.31.0

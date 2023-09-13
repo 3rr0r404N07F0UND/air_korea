@@ -1,0 +1,6 @@
+https://www.data.go.kr/data/15101823/openapi.do
+https://www.data.go.kr/data/15101829/openapi.do
+https://www.data.go.kr/data/15101828/openapi.do
+https://www.data.go.kr/data/15101830/openapi.do
+https://www.data.go.kr/data/15101827/openapi.do
+https://www.data.go.kr/data/15101826/openapi.do
