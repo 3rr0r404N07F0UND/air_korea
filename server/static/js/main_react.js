@@ -26,19 +26,40 @@ const SideBarList = props => {
   }, props.Title1), /*#__PURE__*/React.createElement("li", {
     className: `${props.className}-li`
   }, props.Title2)), /*#__PURE__*/React.createElement("ol", null, /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "red"
+    }
   }, "khai: \uD1B5\uD569\uB300\uAE30\uD658\uACBD\uC218\uCE58"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "green"
+    }
   }, "so2: \uC544\uD669\uC0B0\uAC00\uC2A4 \uB18D\uB3C4"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "blue"
+    }
   }, "co: \uC77C\uC0B0\uD654\uD0C4\uC18C \uB18D\uB3C4"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "white"
+    }
   }, "pm10: \uBBF8\uC138\uBA3C\uC9C0 ", /*#__PURE__*/React.createElement("sub", null, "PM10"), " \uB18D\uB3C4"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "yellow"
+    }
   }, "pm25: \uBBF8\uC138\uBA3C\uC9C0 ", /*#__PURE__*/React.createElement("sub", null, "PM25"), " \uB18D\uB3C4"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "violet"
+    }
   }, "no2: \uC774\uC0B0\uD654\uC9C8\uC18C \uB18D\uB3C4"), /*#__PURE__*/React.createElement("li", {
-    className: "sidebar-list-ol-li"
+    className: "sidebar-list-ol-li",
+    style: {
+      color: "black"
+    }
   }, "o3: \uC624\uC874 \uB18D\uB3C4")));
 };
 class MainSector extends React.Component {

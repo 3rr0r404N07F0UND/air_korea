@@ -32,13 +32,13 @@ const SideBarList = (props) => {
       <li className={`${props.className}-li`}>{props.Title4}</li> */}
       </ul>
       <ol>
-        <li className="sidebar-list-ol-li">khai: 통합대기환경수치</li>
-        <li className="sidebar-list-ol-li">so2: 아황산가스 농도</li>
-        <li className="sidebar-list-ol-li">co: 일산화탄소 농도</li>
-        <li className="sidebar-list-ol-li">pm10: 미세먼지 <sub>PM10</sub> 농도</li>
-        <li className="sidebar-list-ol-li">pm25: 미세먼지 <sub>PM25</sub> 농도</li>
-        <li className="sidebar-list-ol-li">no2: 이산화질소 농도</li>
-        <li className="sidebar-list-ol-li">o3: 오존 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "red"}}>khai: 통합대기환경수치</li>
+        <li className="sidebar-list-ol-li" style={{color: "green"}}>so2: 아황산가스 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "blue"}}>co: 일산화탄소 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "white"}}>pm10: 미세먼지 <sub>PM10</sub> 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "yellow"}}>pm25: 미세먼지 <sub>PM25</sub> 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "violet"}}>no2: 이산화질소 농도</li>
+        <li className="sidebar-list-ol-li" style={{color: "black"}}>o3: 오존 농도</li>
       </ol>
     </>
   );
