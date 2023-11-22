@@ -71,7 +71,7 @@ class MainSector extends React.Component {
     };
     (async () => {
       let weatherText = "좋은 날씨다!";
-      const nowWeather = await (await fetch("http://localhost:5000/value")).json();
+      const nowWeather = await (await fetch("/value")).json();
       if (nowWeather.khaiValue > 251) {
         weatherText = "날씨가 많이 안좋다... 마스크 챙겨서 다녀라!";
       } else if (nowWeather.khaiValue > 101) {
@@ -171,7 +171,7 @@ class CanvasValue extends React.Component {
     this.ctx.textAlign = "center";
     this.ctx.strokeStyle = "black";
     (async () => {
-      const response = await fetch("http://localhost:5000/value");
+      const response = await fetch("/value");
       const jsonData = await response.json();
       let locateX = 20;
       let khaiValue;
@@ -212,7 +212,7 @@ class CanvasGraph extends React.Component {
     this.canvas = document.getElementById(this.props.id);
     this.ctx = this.canvas.getContext("2d");
     (async () => {
-      const response = await fetch("http://localhost:5000/graph");
+      const response = await fetch("/graph");
       const jsonData = await response.json();
       const khaiValue = jsonData.khaiValue.map(v => {
         if (v === "-") {
@@ -316,7 +316,7 @@ class CanvasGrade extends React.Component {
     this.ctx.textAlign = "center";
     this.ctx.strokeStyle = "black";
     (async () => {
-      const response = await fetch("http://localhost:5000/grade");
+      const response = await fetch("/grade");
       const jsonData = await response.json();
       let locateX = 20;
       for (const key in jsonData) {}
