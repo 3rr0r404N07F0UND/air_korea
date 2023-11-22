@@ -2,12 +2,16 @@ from flask import Flask, render_template, request
 import requests
 import datetime
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 now_time = datetime.datetime.now().strftime("%Y-%m-%d")
 
 url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty"
 params = {
-    "serviceKey": "oocZw3qEC6C1VXB28C58RO5H/M/r0CI6tl4GahtPWN+Oz4eBImq1541i7/XQ65xs9UzWPE1rTCtLir6QM1v2PQ==",
+    "serviceKey": os.environ.get("KEY"),
     "returnType": "json",
     "numOfRows": "100",
     "pageNo": "1",
@@ -109,4 +113,4 @@ def value_date():
   return json.dumps(result_dict)
 
 if __name__ == "__main__":
-  app.run(host = "0.0.0.0", port = 9992, debug = True)
+  app.run(host = "0.0.0.0", port = os.environ.get("PORT"), debug = True)
